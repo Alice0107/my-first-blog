@@ -10,5 +10,18 @@
 			<a href=https://pl.wikipedia.org/wiki/Hamilton_(musical)>wikipedia</a>
 			<ul><li>1</li><li>2</li><li>3</li></ul>
 		</div>
+	{% for post in posts %}
+		<div>
+			<p>published: {{ post.published_date }}</p>
+			<h1><a href-"">{{ post.title }}</a></h1>
+			<p>{{ post.text|linebreaksbr }}</p>
+		</div>
+	{% endfor %}
+		<div>
+			{{ posts }}
+		</div>
+		<div>
+			{{ posts }}
+		</div>
 	</body>
 </html>
